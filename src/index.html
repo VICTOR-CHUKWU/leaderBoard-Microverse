@@ -3,27 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script defer src="https://use.fontawesome.com/releases/v5.11.2/js/all.js"></script>
   <title>Leaderboard</title>
 </head>
 <body>
   <main class="container">
     <h1>Leaderboard</h1>
     <div class="text">
-      <h3>Recent Scores <span><button type="reset">Refresh</button></span></h3>
+      <h3>Recent Scores <span><button type="reset" id="refresh">Refresh</button></span></h3>
     </div>
-    <section>
+    <section class="grid">
       <div class="score-cover">
         <ul class="score-list">
         </ul>
       </div>  
-        <div class="add-score">
+        <form class="add-score">
           <h3>Add your score</h3>
-          <ul class="list">
-            <li><input type="text" class="name" required placeholder="Your name"></li>
-            <li><input type="number" class="score" required placeholder="Your score"></li>
-            <li class="button"><button class="btn" type="submit">Submit</button></li>
-          </ul>
-        </div>
+           <input type="text" class="name" required placeholder="Your name">
+           <input type="number" class="score" required placeholder="Your score">
+           <button class="btn" type="submit">Submit</button>
+        
+        </form>
     </section>
   </main>
 </body>
