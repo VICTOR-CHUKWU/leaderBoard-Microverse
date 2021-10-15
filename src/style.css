@@ -5,12 +5,9 @@ body {
 }
 
 .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 40%;
+  width: 90%;
+  margin: 1rem auto;
   border: 2px solid #000;
-  transform: translate(-50%, -50%);
 }
 
 h1 {
@@ -29,19 +26,15 @@ div > h3 button,
 }
 
 .text {
-  margin-left: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.3rem;
+  margin: 0.6rem 1rem;
 }
 
 .text h3 {
   position: relative;
-  top: 1rem;
   font-size: 1.4rem;
-}
-
-section {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
 }
 
 .score-list {
@@ -55,11 +48,17 @@ section {
   border-radius: 3px;
 }
 
+.list-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 0.6rem;
+}
+
 .add-score {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   font-size: 1.4rem;
 }
 
@@ -71,13 +70,14 @@ section {
   display: grid;
   gap: 0.3rem;
   grid-template-columns: repeat(2, 1fr);
-  margin-bottom: 1rem;
+  margin: 0.6rem 1rem;
 }
 
 input {
   border: 2px solid black;
   padding: 0.29rem;
-  margin-top: 0.2rem;
+  width: 70%;
+  margin: 0.2rem auto;
 }
 
 ::placeholder {
@@ -85,9 +85,10 @@ input {
   font-weight: 700;
 }
 
-.button {
-  display: flex;
-  justify-content: flex-end;
+.btn {
+  width: 50%;
+  justify-self: center;
+  align-self: center;
 }
 
 span {
@@ -100,10 +101,10 @@ span {
   font-weight: 700;
 }
 
-.scores:nth-child(odd) {
+.list-items:nth-child(odd) {
   background-color: #fff;
 }
 
-.scores:nth-child(even) {
+.list-items:nth-child(even) {
   background-color: #f0f0f0;
 }

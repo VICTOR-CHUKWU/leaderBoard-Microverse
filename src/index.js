@@ -15,19 +15,14 @@ const loadToDom = async () => {
   const userData = await fetchUser();
   sortUserDataByScore(userData.result);
   let display = '';
-  userData.result.forEach((data, index) => {
+  userData.result.forEach((data) => {
     display += `
-    <li>
-    <span class="fa-layers fa-fw">
-    <i class="fas fa-certificate"></i>
-    <span class="ranking fa-layers-text fa-inverse" data-fa-transform="shrink-11.5">${index + 1}</span>
-    </span>
+    <li class="list-items">
     <div class="user">${data.user.toUpperCase()}  </div>
     <div class="user_score">${data.score}</div>
     </li>
     `;
     list.innerHTML = display;
-    // list.appendChild(scoreInfo);
   });
 };
 
