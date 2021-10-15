@@ -5,7 +5,7 @@ Leader Board App
 
 > this project is a project on my porfolio
 
-<!-- ![screenshot](screenshot.PNG) -->
+![screenshot](screenshot.PNG)
 
 
 ## Live Demo
@@ -22,13 +22,27 @@ To get a local copy up and running follow these simple example steps.
 install git, node, any code editor in your local machine
 
 ### Setup
-clone the repo or download from https://github.com/VICTOR-CHUKWU/Todo-List-microverse
+clone the repo or download from https://github.com/VICTOR-CHUKWU/leaderBoard-Microverse
 
 ### Install
 install all dependencies with npm install
 
 ### Usage
-open index.html in your local browser
+run npm start in your terminal to build and serve the files
+
+## Test
+
+For tracking linter errors locally you need to follow these steps:
+
+- For tracking the linter errors in HTML file run:
+  > npx hint .
+
+- For tracking the linter errors in CSS file run:
+  > npx stylelint "**/*.{css,scss}"
+
+  - And For tracking the linter errors in JavaScript file run:
+  > npx eslint .
+
 
 ## Authors
 👤 **Victor**
